@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #fff1ed
+    ;
+  }
+  .nav__links {
+      list-style: none;
+      display: flex;
+    }
+  
+    .nav__links a,
+    .cta,
+    .overlay__content a {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      color: #9DC0BC;
+      text-decoration: none;
+    }
+  
+    .nav__links li {
+      padding: 0px 20px;
+    }
+    
+    .nav__links li a {
+      transition: all 0.3s ease 0s;
+    }
+    
+    .nav__links li a:hover {
+      color: #edfff1;
+    }
+    
+    .cta {
+      margin-left: 20px;
+      padding: 9px 25px;
+      background-color: #edfbff
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+    }
+    
+    .cta:hover {
+      background-color: #edfbff;
+    }
+    
+  
+    
+    .menu {
+      display: none;
+    }
+    
+    .overlay {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      background-color: #24252a;
+      overflow-x: hidden;
+      transition: all 0.5s ease 0s;
+    }
+    
+    .overlay--active {
+      width: 100%;
+    }
+    
+    .overlay__content {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .overlay a {
+      padding: 15px;
+      font-size: 36px;
+      display: block;
+      transition: all 0.3s ease 0s;
+    }
+    
+    .overlay a:hover,
+    .overlay a:focus {
+      color: #fff1ed;
+    }
+    .overlay .close {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+      color: #edf0f1;
+      cursor: pointer;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .overlay a {
+        font-size: 20px;
+      }
+      .overlay .close {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+      }
+    }
+    
+    @media only screen and (max-width: 800px) {
+      .nav__links,
+      .cta {
+        display: none;
+      }
+      .menu {
+        display: initial;
+      }
+    }
+
+.centered {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: white;
+ border-style: solid;
+}
+
+.bg-img {
+  background-image: url(https://i.ibb.co/KFpPpyL/New-Project-11-1.png);
+width: 100%;
+height: 405px;
+
+background-size: cover;
+background-repeat: no-repeat;
+position: static;
+}
+
+   .parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image1 {
+  position: relative;
+ width: 100%;
+height: 1000px;
+ 
+}
+
+.image2 {
+  position: absolute;
+  top: 120px;
+  left: 400px;
+  width: 900px;
+   border: 1px solid #000000;
+
+}
+
+
+.image3 {
+  position: absolute;
+  top: 400px;
+  left: 900px;
+  width: 500px;
+   border: 1px solid #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFF1ED;
+  padding: 20px;
+  font-family: Arial;
+}
+
+
+.main {
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  display: table;
+  clear: both;
+}
+
+/* u can change the color here. dont forget */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
